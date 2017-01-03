@@ -27,7 +27,7 @@ var config = {
       name: 'backend'
     },
     port: process.env.PORT || 3000,
-    db: process.env.MONGODB_URL || 'mongodb://localhost/backend-production'
+    db: process.env.MONGODB_URI || 'mongodb://localhost/backend-production'
   }
 };
 
