@@ -26,6 +26,7 @@
     "e2e": "npm run protractor",
     "github-deploy:dev": "webpack --config config/webpack.github-deploy.js --progress --profile --env.githubDev",
     "github-deploy:prod": "webpack --config config/webpack.github-deploy.js --progress --profile --env.githubProd",
+    "heroku": "npm run server:prod -- -p $PORT",
     "github-deploy": "npm run github-deploy:dev",
     "lint": "npm run tslint \"src/**/*.ts\"",
     "postversion": "git push && git push --tags",
