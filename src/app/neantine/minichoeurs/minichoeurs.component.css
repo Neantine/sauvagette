@@ -73,13 +73,12 @@ svg {
 svg text {
   text-anchor: middle;
   font-family: 'Roboto', sans-serif;
-  font-size: 25em;
+  font-size: 0.8em;
   letter-spacing:-0.03em;
   height: 100%;
 }
 svg mask rect {
-  fill: rgba(210, 255, 206, 0.9);
-}
+  fill: rgba(210, 255, 206, 0.9);   }
 svg > rect {
   fill: #d5ffce;
   -webkit-mask: url(#mask);
@@ -102,4 +101,43 @@ video{
     font-size:0.5em;
     font-weight:400;
   }
+}
+
+.Title1 {
+  padding-top: 150px;
+  font-size: 20px;
+  font-family: "High Tower Text";
+  flex: 1 1 auto;
+  color : #061e12;
+
+}
+.Title2 {
+  padding: 15px;
+  font-size: 20px;
+  font-family: "High Tower Text";
+  flex: 1 1 auto;
+  color : #b3ffee;
+
+}
+
+.Content1 {
+  background-color: #b9ffcb;
+  font-size: 20px;
+  font-family: "High Tower Text";
+  padding: 15px;
+  flex: 1 1 auto;
+  color : #000000;
+}
+
+
+
+.Title3 {
+  background-color: #b9ffcb;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "High Tower Text";
+  padding: 15px;
+  flex: 1 1 auto;
+  color : #000000;
+
 }
