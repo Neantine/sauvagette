@@ -11,7 +11,7 @@ import { DevelopmentComponent } from "./development/development.component";
 import { AccountComponent } from "./account/account.component";
 
 import {CommonModule} from "../common.module";
-import { NKDatetimeModule } from 'ng2-datetime/ng2-datetime';
+
 
 @NgModule({
   declarations: [
