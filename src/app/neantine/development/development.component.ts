@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 
 @Component({
-  selector: 'home-app',
+  selector: 'dev-app',
   styles  : [ require('./development.component.css') ],
   template: require('./development.component.html')
 })

@@ -8,19 +8,24 @@ import { LoginComponent } from "./login/login.component";
 import { MiniChoeursComponent } from "./minichoeurs/minichoeurs.component";
 import { VoiceComponent } from "./voice/voice.component";
 import { DevelopmentComponent } from "./development/development.component";
+import { AccountComponent } from "./account/account.component";
+
 import {CommonModule} from "../common.module";
+import { NKDatetimeModule } from 'ng2-datetime/ng2-datetime';
 
 @NgModule({
   declarations: [
-    LoginComponent,
+    //LoginComponent,
     HomeComponent,
     MiniChoeursComponent,
     VoiceComponent,
     DevelopmentComponent,
+    //AccountComponent,
     UrlSanitizerPipe
   ],
   imports: [
-    CommonModule.modules()
+    CommonModule.modules(),
+    NKDatetimeModule
   ],
   providers: [
     UserStore.PROVIDERS,

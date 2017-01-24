@@ -2,8 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 
 
+
 @Component({
-  selector: 'home-app',
+  selector: 'voice-app',
   styles  : [ require('./voice.component.css') ],
   template: require('./voice.component.html')
 })

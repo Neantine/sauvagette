@@ -80,10 +80,10 @@ svg text {
   height: 100%;
 }
 svg mask rect {
-  fill: rgba(177, 255, 206, 0.9);
+  fill: rgba(238, 207, 255, 0.9);
 }
 svg > rect {
-  fill: #c4ffdb;
+  fill: #e9cfff;
   -webkit-mask: url(#mask);
   mask: url(#mask);
 }
@@ -124,7 +124,7 @@ video{
 }
 
 .Content1 {
-  background-color: #b9ffcb;
+  background-color: #dbc5ff;
   font-size: 20px;
   font-family: "High Tower Text";
   padding: 15px;
@@ -135,7 +135,7 @@ video{
 
 
 .Title3 {
-  background-color: #b9ffcb;
+  background-color: #eecfff;
   font-size: 20px;
   font-weight: bold;
   font-family: "High Tower Text";

@@ -1,6 +1,7 @@
-import { NgModule, ApplicationRef } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { MaterialModule } from '@angular/material';
+
+
 /*
  * Platform and Environment providers/directives/pipes
  */

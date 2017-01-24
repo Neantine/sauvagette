@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 
 @Component({
-  selector: 'home-app',
+  selector: 'minichoeurs-app',
   styles  : [ require('./minichoeurs.component.css') ],
   template: require('./minichoeurs.component.html')
 })
