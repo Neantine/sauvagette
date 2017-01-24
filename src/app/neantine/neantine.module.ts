@@ -24,8 +24,7 @@ import { NKDatetimeModule } from 'ng2-datetime/ng2-datetime';
     UrlSanitizerPipe
   ],
   imports: [
-    CommonModule.modules(),
-    NKDatetimeModule
+    CommonModule.modules()
   ],
   providers: [
     UserStore.PROVIDERS,
