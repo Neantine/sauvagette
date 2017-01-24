@@ -11,7 +11,7 @@
 }
 .titlew{
   font-family: "High Tower Text";
-  color : #55d16b;
+  color : #fffb1f;
   font-size: 20px;
   padding-right: 85px;
 }
@@ -19,7 +19,7 @@
 
 .titlew:hover{
   font-family: "High Tower Text";
-  color : #58b593;
+  color : #f3ff94;
   font-size: 20px;
   padding-right: 85px;
   transform: scale(1.03);
@@ -73,9 +73,9 @@ svg {
   position:absolute;
 }
 svg text {
+  font-family: "High Tower Text";
   text-anchor: middle;
-  font-family: 'Roboto', sans-serif;
-  font-size: 0.8em;
+  font-size: 1em;
   letter-spacing:-0.03em;
   height: 100%;
 }
@@ -119,7 +119,7 @@ video{
   font-size: 20px;
   font-family: "High Tower Text";
   flex: 1 1 auto;
-  color : #b3ffee;
+  color : #fffb1f;
 
 }
 .Content1 {
