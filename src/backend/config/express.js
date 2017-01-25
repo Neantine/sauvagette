@@ -44,7 +44,7 @@ module.exports = function(app, config) {
   app.use(methodOverride());
 
   app.use(allowCrossDomain)
-  app.use(express.static(path.join(config.root, '../../dist')));
+  app.use(express.static(path.join(config.root, '../../../dist/')));
 
 
   var controllers = glob.sync(config.root + '/app/controllers/*.js');
