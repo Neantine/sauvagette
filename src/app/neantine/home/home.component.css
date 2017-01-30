@@ -124,9 +124,21 @@ video{
 }
 .Content1 {
   background-color: #dbc5ff;
-  font-size: 20px;
+  font-size: 25px;
   font-family: "High Tower Text";
   padding: 15px;
   flex: 1 1 auto;
   color : #000000;
 }
+/*.Content1.a{*/
+  /*font-family: "High Tower Text";*/
+  /*color : #fffb1f;*/
+  /*font-size: 20px;*/
+  /*padding-right: 0px;*/
+/*}*/
+/*.Content1.a:link{*/
+  /*font-family: "High Tower Text";*/
+  /*color : #fffb1f;*/
+  /*font-size: 20px;*/
+  /*padding-right: 0px;*/
+/*}*/
