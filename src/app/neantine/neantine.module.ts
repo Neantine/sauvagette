@@ -9,6 +9,8 @@ import { MiniChoeursComponent } from "./minichoeurs/minichoeurs.component";
 import { VoiceComponent } from "./voice/voice.component";
 import { DevelopmentComponent } from "./development/development.component";
 import { AccountComponent } from "./account/account.component";
+import {ContactFormComponent} from "./contactform/contact.form.component";
+
 
 import {CommonModule} from "../common.module";
 
@@ -21,6 +23,7 @@ import {CommonModule} from "../common.module";
     VoiceComponent,
     DevelopmentComponent,
     //AccountComponent,
+    ContactFormComponent,
     UrlSanitizerPipe
   ],
   imports: [

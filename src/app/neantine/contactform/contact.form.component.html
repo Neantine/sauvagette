@@ -1,0 +1,33 @@
+<div class="jumbotron">
+  <h2></h2>
+  <!-- Right of the bat, we no longer declare a local variable but use the formGroup directive and set it the complexForm object we defined in the constructor. Throughout the form, we will reference the complexForm root object as can be seen in the submitForm function.-->
+  <form [formGroup]="contactForm" (ngSubmit)="submitForm(contactForm.value)">
+
+    <div class="form-group">
+      <label>Pseudo</label>
+      <!-- Rather than set an ngModel, we use the formControl directive to sync our input to the complexForm object. Notice that we are also setting the attribute we wish the corresponding input to sync with. We no longer need the name attribute, but can optionally add it. -->
+      <input class="form-control" type="text" placeholder="John" [formControl]="contactForm.controls['pseudo']">
+    </div>
+
+    <div class="form-group">
+      <label>e-mail</label>
+      <input class="form-control" type="text" placeholder="gege@example.com" [formControl]="contactForm.controls['email']">
+    </div>
+
+    <div class="form-group">
+      <label>C'est à quel sujet ?</label>
+    </div>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="dev" name="dev" [formControl]="contactForm.controls['dev']"> Développement
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="cours" name="cours" [formControl]="contactForm.controls['cours']"> Cours de chant
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="minichoeurs" name="minichoeurs" [formControl]="contactForm.controls['minichoeurs']"> Les Mini Choeurs
+    </label>
+    <div class="form-group">
+      <button type="submit" class="btn btn-default">Envoyer !</button>
+    </div>
+  </form>
+</div>
