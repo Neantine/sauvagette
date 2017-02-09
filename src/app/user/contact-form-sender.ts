@@ -22,7 +22,7 @@ export class ContactFormSender {
 
 
   sendFormValue(value: any): Observable<any> {
-    console.log('FORMSENDER IS PROCESSING FORM VALUE: ')
+    //console.log('FORMSENDER IS PROCESSING FORM VALUE: ')
 
     let headers = new Headers({'Content-Type': 'text'});
 
@@ -33,7 +33,7 @@ export class ContactFormSender {
     headers.append("dev", value.dev);
     headers.append("cours", value.cours);
 
-    console.log("options ", options);
+    //console.log("options ", options);
 
     return this.http.get('/api/v0/sendMessage', options)
       .map((res:Response) => res)

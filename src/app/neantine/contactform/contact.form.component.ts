@@ -31,8 +31,8 @@ export class ContactFormComponent implements OnInit {
 
   sendFormValue(value: any) {
 
-    console.log('FORM VALUE SUBMITTED :')
-    console.log(value);
+    //console.log('FORM VALUE SUBMITTED :')
+    //console.log(value);
     this.contactFormSender.sendFormValue(value).subscribe( res => { console.log("component res: ", res);  this.router.navigate['voice'] }
 
       ,
@@ -48,10 +48,10 @@ export class ContactFormComponent implements OnInit {
 
   ngOnInit()
   {
-    console.log('hello contactform component');
+    //console.log('hello contactform component');
   }
 
   ngOnDestroy() {
-    console.log('byebye contactform component');
+    //console.log('byebye contactform component');
   }
 }
