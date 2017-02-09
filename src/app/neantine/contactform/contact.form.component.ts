@@ -33,7 +33,7 @@ export class ContactFormComponent implements OnInit {
 
     //console.log('FORM VALUE SUBMITTED :')
     //console.log(value);
-    this.contactFormSender.sendFormValue(value).subscribe( res => { console.log("component res: ", res);  this.router.navigate['voice'] }
+    this.contactFormSender.sendFormValue(value).subscribe( res => { /*console.log("component res: ", res);*/  this.router.navigate['voice'] }
 
       ,
       err => {
