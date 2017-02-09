@@ -8,7 +8,7 @@ const config = require('./config/config');
 let listener = app.listen(config.port, function () {
   console.log('Express server listening on port ' + config.port);
 
-  //console.log(app);
+ //console.log(app);
 
 });
 

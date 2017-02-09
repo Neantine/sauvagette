@@ -1,0 +1,61 @@
+
+
+padding: 15px;
+flex: 1 1 auto;
+.contactForm {
+  margin: 10px;
+  border-radius: 3px;
+  padding:0;
+  height: 500px;
+  width: 800px;
+
+}
+
+.ButtonPos {
+}
+.ButtonStyle {
+  font-size: 22px;
+  font-family: "High Tower Text";
+  color: #fffb1f;
+  background-color: rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 4px 3px 1px  rgba(0,0,25,0.35);
+  -moz-box-shadow: 8px 3px 5px  rgba(0,0,25,0.75);
+  box-shadow: 5px 5px 3px  rgba(0,0,25,0.75);
+}
+
+.ButtonStyle:hover{
+  border-bottom: solid #fffb1f 1px;
+  background-color: rgba(0, 0, 0, 0.001);
+  animation: shawd 2s;
+  -moz-animation: shawd 2s; /* Firefox */
+  -webkit-animation: shawd 2s; /* Safari et Chrome */
+  -o-animation: shawd 2s; /* Opera */
+
+}
+
+.ButtonStyle:disabled {
+  color: rgba(8, 8, 8, 0.98);
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.ButtonStyle:enabled {
+ color: #f3ff94;
+}
+
+.input{
+  font-size: 22px;
+  font-family: "High Tower Text";
+  color: #f3ff94;
+  padding-bottom: 10px;
+  border-radius: 30px;
+  width: 170px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.40);
+}
+
+
+.text {
+  font-size: 22px;
+  font-family: "High Tower Text";
+  color: #f3ff94;
+}
+

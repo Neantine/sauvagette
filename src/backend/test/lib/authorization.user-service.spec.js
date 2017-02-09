@@ -16,7 +16,7 @@ afterEach(() => {
 
 describe('AuthorizationUserService', () => {
 
-    it('should add authorization for an new User', function () {
+    xit('should add authorization for an new User', function () {
       let authorizationUserService = new AuthorizationUserService();
 
       let userInfoSession = new UserInfoSession({userId:'user1',userToken: 'aaaaa'});
@@ -25,7 +25,7 @@ describe('AuthorizationUserService', () => {
       expect( authorizationUserService.getAuthorizedUsers().length).toBe(1);
     });
 
-  it('should add 3 auhorization for 3 different user', function () {
+  xit('should add 3 auhorization for 3 different user', function () {
     let authorizationUserService = new AuthorizationUserService();
 
 
@@ -55,7 +55,7 @@ describe('AuthorizationUserService', () => {
   });
 
 
-  it('should not add authorization for the same userId  with the same userToken ', function () {
+  xit('should not add authorization for the same userId  with the same userToken ', function () {
 
     let authorizationUserService = new AuthorizationUserService();
 
@@ -82,7 +82,7 @@ describe('AuthorizationUserService', () => {
   });
 
 
-  it('should respond  null for AuthorizationUserService.isAuthorize for userInfoSession({})', function () {
+  xit('should respond  null for AuthorizationUserService.isAuthorize for userInfoSession({})', function () {
 
 
     let authorizationUserService = new AuthorizationUserService();

@@ -1,33 +1,43 @@
-<div class="jumbotron">
-  <h2></h2>
-  <!-- Right of the bat, we no longer declare a local variable but use the formGroup directive and set it the complexForm object we defined in the constructor. Throughout the form, we will reference the complexForm root object as can be seen in the submitForm function.-->
-  <form [formGroup]="contactForm" (ngSubmit)="submitForm(contactForm.value)">
+<div class="contactForm">
+
+  <!-- Right of the bat, we no longer declare a local variable but use the formGroup directive and set it the complexForm object we defined in the constructor.
+  Throughout the form, we will reference the complexForm root object as can be seen in the submitForm function.-->
+  <form [formGroup]="contactForm" (ngSubmit)="sendFormValue(contactForm.value)">
 
     <div class="form-group">
-      <label>Pseudo</label>
-      <!-- Rather than set an ngModel, we use the formControl directive to sync our input to the complexForm object. Notice that we are also setting the attribute we wish the corresponding input to sync with. We no longer need the name attribute, but can optionally add it. -->
-      <input class="form-control" type="text" placeholder="John" [formControl]="contactForm.controls['pseudo']">
+      <label class="text">Nom</label>
+      <!-- Rather than set an ngModel, we use the formControl directive to sync our input to the complexForm object.
+      Notice that we are also setting the attribute we wish the corresponding input to sync with. We no longer need the name attribute, but can optionally add it. -->
+      <input class="form-control input" type="text" placeholder="John" [formControl]="contactForm.controls['nom']">
     </div>
-
-    <div class="form-group">
-      <label>e-mail</label>
-      <input class="form-control" type="text" placeholder="gege@example.com" [formControl]="contactForm.controls['email']">
+    <br>
+    <div class="form-group"  [ngClass]="{'has-error':!contactForm.controls['email'].valid && contactForm.controls['email'].touched}">
+      <label class="text">Email</label>
+      <input class="form-control input" type="text" placeholder="john@example.com" [formControl]="contactForm.controls['email']">
+      <!--<div *ngIf="!contactForm.controls['email'].hasError('required') && contactForm.controls['email'].touched" class="alert alert-danger">N'oubliez pas votre adresse e-mail.</div>-->
     </div>
-
+    <br>
     <div class="form-group">
-      <label>C'est à quel sujet ?</label>
     </div>
-    <label class="checkbox-inline">
-      <input type="checkbox" value="dev" name="dev" [formControl]="contactForm.controls['dev']"> Développement
+    <div>
+    <label class="checkbox-inline text">
+      <input type="checkbox" value="dev" name="dev" [formControl]="contactForm.controls['dev']">Me renseigner sur le développement Web
     </label>
-    <label class="checkbox-inline">
-      <input type="checkbox" value="cours" name="cours" [formControl]="contactForm.controls['cours']"> Cours de chant
+    </div>
+    <div>
+    <label class="checkbox-inline text">
+      <input type="checkbox" value="cours" name="cours" [formControl]="contactForm.controls['cours']">Me renseigner sur les cours de chant individuels ou en mini-choeurs
     </label>
-    <label class="checkbox-inline">
-      <input type="checkbox" value="minichoeurs" name="minichoeurs" [formControl]="contactForm.controls['minichoeurs']"> Les Mini Choeurs
-    </label>
+    </div>
+<br>
     <div class="form-group">
-      <button type="submit" class="btn btn-default">Envoyer !</button>
+      <button type="submit" class="btn btn-primary ButtonStyle" [disabled]="!contactForm.valid">Envoyer!</button>
     </div>
   </form>
 </div>
+
+<!--class="form-group" [ngClass]="{'has-error':!complexForm.controls['firstName'].valid && complexForm.controls['firstName'].touched}">-->
+<!--<label>First Name:</label>-->
+<!--<input class="form-control" type="text" placeholder="John" [formControl]="complexForm.controls['firstName']">-->
+<!--<div *ngIf="complexForm.controls['firstName'].hasError('required') && complexForm.controls['firstName'].touched" class="alert alert-danger">You must include a first name.</div>-->
+<!--</div>-->

@@ -1,32 +1,57 @@
 /**
  * Created by Lilith on 30/01/2017.
  */
-import { Component } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import {Component, OnInit} from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ContactFormSender } from '../../user/contact-form-sender'
+
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'contact-form',
   styles  : [ require('./contact.form.component.css') ],
   template: require('./contact.form.component.html')
 })
-export class ContactFormComponent {
+
+export class ContactFormComponent implements OnInit {
 
   contactForm : FormGroup;
 
-  constructor(fb: FormBuilder){
+  constructor(fb: FormBuilder, private contactFormSender:ContactFormSender, private router:Router) {
 
      this.contactForm = fb.group({
-       'pseudo' : '',
-       'email' : '',
+       'nom' : '',
+       'email' : ['', Validators.compose([Validators.required, Validators.pattern(new RegExp('[^@]+@[^@]+\.[^@]+'))])],
        'dev' : false,
        'cours' : false,
-       'minichoeurs' : false,
     })
+
   }
 
-  // Again we’ll implement our form submit function that will just console.log the results of our form
-  submitForm(value: any):void{
-    console.log('Reactive Form Data: ')
+
+  sendFormValue(value: any) {
+
+    console.log('FORM VALUE SUBMITTED :')
     console.log(value);
+    this.contactFormSender.sendFormValue(value).subscribe( res => { console.log("component res: ", res);  this.router.navigate['voice'] }
+
+      ,
+      err => {
+        // Log errors if any
+        console.log(err);
+        this.router.navigate['voice']
+      });
+
+    return;
+
+  }
+
+  ngOnInit()
+  {
+    console.log('hello contactform component');
+  }
+
+  ngOnDestroy() {
+    console.log('byebye contactform component');
   }
 }
