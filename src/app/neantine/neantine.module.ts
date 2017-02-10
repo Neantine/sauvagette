@@ -6,6 +6,7 @@ import { MiniChoeursComponent } from "./minichoeurs/minichoeurs.component";
 import { VoiceComponent } from "./voice/voice.component";
 import { DevelopmentComponent } from "./development/development.component";
 import {ContactFormComponent} from "./contactform/contact.form.component";
+import {ThankYouComponent} from "./contactform/thankyou.component";
 
 import {CommonModule} from "../common.module";
 import {ContactFormSender} from "../user/contact-form-sender"
@@ -17,7 +18,7 @@ import {ContactFormSender} from "../user/contact-form-sender"
     MiniChoeursComponent,
     VoiceComponent,
     DevelopmentComponent,
-    //AccountComponent,
+    ThankYouComponent,
     ContactFormComponent,
     UrlSanitizerPipe
   ],

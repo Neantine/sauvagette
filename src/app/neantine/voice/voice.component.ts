@@ -23,7 +23,7 @@ export class VoiceComponent implements OnInit {
 
 
   ngOnDestroy() {
-    console.log('byebye `VoiceComponent` component');
+    //console.log('byebye `VoiceComponent` component');
   }
 
 }

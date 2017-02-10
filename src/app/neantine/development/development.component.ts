@@ -20,7 +20,7 @@ export class DevelopmentComponent implements OnInit {
 
 
   ngOnDestroy() {
-    console.log('byebye `DevelopmentComponent` component');
+    //console.log('byebye `DevelopmentComponent` component');
   }
 
 }

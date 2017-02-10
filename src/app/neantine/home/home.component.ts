@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
 
 
   ngOnDestroy() {
-    console.log('byebye `HomeComponent` component');
+    //console.log('byebye `HomeComponent` component');
   }
 
 }

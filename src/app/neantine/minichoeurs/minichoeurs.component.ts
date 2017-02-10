@@ -21,7 +21,7 @@ export class MiniChoeursComponent implements OnInit {
 
 
   ngOnDestroy() {
-    console.log('byebye `MiniChoeursComponent` component');
+    //console.log('byebye `MiniChoeursComponent` component');
   }
 
 }
